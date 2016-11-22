@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>TriviaGame</title><!-- Semantic UI Core CSS -->
+    <link href="/public/css/semantic/dist/semantic.min.css" rel="stylesheet"
+    type="text/css"><!-- Custom CSS -->
+    <link href="/public/css/style.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-latest.min.js">
+    </script>
+</head>
+<body>
+    <div id="paper-wrapper">
+        <header>
+            <div class="ui orange message">
+                <h1>Trivia Game API</h1>
+            </div>
+            <div class="ui inverted orange menu">
+                <a class="active item" href="#" id="score">Score</a> <a class=
+                "item" href="#" id='getQestion'>Get a question</a> <a class=
+                "item" href="#" id='createQuestion'>Create a Question</a>
+            </div>
+        </header>
+        <hr>
+        <p></p>
+        <p></p>
+        <div class="ui center aligned left grid" id='questionForm'>
+            <div class="five wide column">
+                <h1 class="ui orange image header" id='newQ'>Creates a new
+                trivia question</h1>
+                <form action="#" class="ui large form">
+                    <div class="field">
+                        <p class="info aligned left">Question :</p>
+                        <div class="ui large left icon input">
+                            <i class="help icon">&nbsp;</i> <input id=
+                            'question' name="question" type="text">
+                        </div>
+                    </div>
+                    <p class="info aligned left">Answer :</p>
+                    <div class="ui left icon input column">
+                        <i class="announcement icon">&nbsp;</i> <input id=
+                        'answer' name="anwer" type="text">
+                    </div>
+                    <p></p>
+                    <div class="ui left icon input two wide column">
+                        <i class="cloud upload icon">&nbsp;</i> <input id=
+                        "submitQuestion" name="submit" type="submit">
+                    </div>
+                </form>
+            </div>
+            <div id='createQFb'></div>
+        </div>
+        <div class="ui center aligned left grid" id='QAArea'>
+            <form>
+                <div id='dataArea'></div>
+                <div class="ui left icon input">
+                    <i class="announcement icon">&nbsp;</i> <input id=
+                    'answerQA' name="anwer" type="text">
+                </div>
+                <div class="ui left icon input">
+                    <i class="cloud upload icon">&nbsp;</i> <input id=
+                    "submitAnswer" name="submit" type="submit">
+                </div>
+            </form>
+        </div>
+        <div class="ui center aligned left grid" id='scoreArea'></div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js">
+    </script> <!-- app js -->
+     
+    <script src="/public/js/API-app.js">
+    </script>
+</body>
+</html>

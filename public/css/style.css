@@ -1,0 +1,40 @@
+#page-wrapper {
+    width: 960px;
+    background-color: #fff;
+    margin: 0 auto 5px;
+    padding: 20px 0 0 0;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #dbdbdb;
+
+}
+
+.left.icon.input.two.wide.column{
+
+	width:120px;
+	text-align:center;
+}
+
+.ui.center.aligned.left.grid{
+
+	border-top:100px;
+}
+
+.sidebar-nav {
+    position: fixed;
+    width: 150px;
+    left: 0;
+    bottom: 0;
+    top: 130px;
+    border:2px;
+    background-color: #ffedde;
+    padding: 10px;
+    z-index: 10;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+
+}
+
+#QAArea {
+    padding-left: 200px;
+    padding-right: 50px;
+}

@@ -1,0 +1,95 @@
+comment line
+    // collection.remove();
+    // collection.insert({ 'question': 'Who led software development for NASAs Apollo lunar mission?',
+    // 					'answer': 'Margaret Hamilton',
+    // 				    'answerId':1 });  
+    // collection.insert({ 'question': 'Why I made this app?',
+    // 					'answer': 'Assignment 4',
+    // 				    'answerId':2 });
+    // collection.insert({ 'question': 'Which year did the author made this app?',
+    // 					'answer': '2016',
+    // 				    'answerId':3 });
+    // collection.insert({ 'question': 'Which school did the author attend?',
+    // 					'answer': 'CSUF',
+    // 				    'answerId':4 });
+    // collection.insert({ 'question': 'DanswerId the author like Korean food?',
+    // 					'answer': 'it depends...',
+    // 				    'answerId':5 });
+    // collection.insert({ 'question': 'Is the author like Chinese food?',
+    // 					'answer': 'Yes',
+    // 				    'answerId':6 });
+    // collection.insert({ 'question': 'What is a traditional fermented Korean side dish made seasoned vegtable and salt?',
+    // 					'answer': 'Kimchi',
+    // 				    'answerId':7 });
+    // collection.insert({ 'question': 'The Galilean moons orbit around which planet?',
+    // 					'answer': 'Saturn',
+    // 				    'answerId':8 });
+    // collection.insert({ 'question':'Which scientist won two Nobel Prizes for their research into radioactivity?',
+    // 					'answer': 'Albert Einstein',
+    // 				    'answerId':9});
+    // collection.insert({ 'question':'The human heart has how many chambers?',
+    // 					'answer': 'two',
+    // 				    'answerId':10});
+    
+    //  collection.insert({ 'question':'Which element\'s symbol stands for the Latin word hydrargyrum?',
+    // 					'answer': 'Hydrogen',
+    // 				    'answerId':11});   
+    //  collection.insert({ 'question':'Which bird is the fastest known member of the animal kingdom?',
+    // 					'answer': 'Roadrunner',
+    // 				    'answerId':12});
+    //  collection.insert({ 'question':'Which temperature scale also goes by the name of Centigrade?',
+    // 					'answer': 'Celsius',
+    // 				    'answerId':13});
+    //  collection.insert({ 'question':'Which element is the only liquanswerId nonmetal at standard ambient temperature and pressure?',
+    // 					'answer': 'Selenium',
+    // 				    'answerId':14});
+ 
+
+      		 	var collection=db.collection("question");
+       		 	    collection.remove();
+    collection.insert({ 'question': 'Who led software development for NASAs Apollo lunar mission?',
+    					'answer': 'Margaret Hamilton',
+    				    'answerId':1 });  
+    collection.insert({ 'question': 'Why I made this app?',
+    					'answer': 'Assignment 4',
+    				    'answerId':2 });
+    collection.insert({ 'question': 'Which year did the author made this app?',
+    					'answer': '2016',
+    				    'answerId':3 });
+    collection.insert({ 'question': 'Which school did the author attend?',
+    					'answer': 'CSUF',
+    				    'answerId':4 });
+    collection.insert({ 'question': 'DanswerId the author like Korean food?',
+    					'answer': 'it depends...',
+    				    'answerId':5 });
+    collection.insert({ 'question': 'Is the author like Chinese food?',
+    					'answer': 'Yes',
+    				    'answerId':6 });
+    collection.insert({ 'question': 'What is a traditional fermented Korean side dish made seasoned vegtable and salt?',
+    					'answer': 'Kimchi',
+    				    'answerId':7 });
+    collection.insert({ 'question': 'The Galilean moons orbit around which planet?',
+    					'answer': 'Saturn',
+    				    'answerId':8 });
+    collection.insert({ 'question':'Which scientist won two Nobel Prizes for their research into radioactivity?',
+    					'answer': 'Albert Einstein',
+    				    'answerId':9});
+    collection.insert({ 'question':'The human heart has how many chambers?',
+    					'answer': 'two',
+    				    'answerId':10});
+    
+     collection.insert({ 'question':'Which element\'s symbol stands for the Latin word hydrargyrum?',
+    					'answer': 'Hydrogen',
+    				    'answerId':11});   
+     collection.insert({ 'question':'Which bird is the fastest known member of the animal kingdom?',
+    					'answer': 'Roadrunner',
+    				    'answerId':12});
+     collection.insert({ 'question':'Which temperature scale also goes by the name of Centigrade?',
+    					'answer': 'Celsius',
+    				    'answerId':13});
+     collection.insert({ 'question':'Which element is the only liquanswerId nonmetal at standard ambient temperature and pressure?',
+    					'answer': 'Selenium',
+    				    'answerId':14});
+ 
+
+

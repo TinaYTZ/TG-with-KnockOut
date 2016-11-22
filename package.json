@@ -1,0 +1,30 @@
+{
+  "name": "hw4",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mongod --dbpath ./mongodb/data & redis-server & node server.js",
+    "start": "nf start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinaYTZ/TriviaGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TinaYTZ/TriviaGame/issues"
+  },
+  "homepage": "https://github.com/TinaYTZ/TriviaGame#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "foreman": "^2.0.0",
+    "http": "0.0.0",
+    "mongodb": "^2.2.11",
+    "redis": "^2.6.2",
+    "request": "^2.78.0",
+    "semantic-ui": "^2.2.6",
+    "socket.io": "^1.5.1"
+  }
+}
