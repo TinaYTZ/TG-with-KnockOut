@@ -6,12 +6,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="" name="description">
     <meta content="" name="author">
-    <title>TriviaGame</title>
-    <!-- Semantic UI Core CSS -->
-    <link href="/public/css/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css">
-    <!-- Custom CSS -->
+    <title>TriviaGame</title><!-- Semantic UI Core CSS -->
+    <link href="/public/css/semantic/dist/semantic.min.css" rel="stylesheet" type="text/css"><!-- Custom CSS -->
     <link href="/public/css/style.css" rel="stylesheet" type="text/css">
-    </script>
 </head>
 <body>
     <div id="paper-wrapper">
@@ -21,58 +18,55 @@
             </div>
         </header>
         <div class="ui center aligned left grid" data-bind="visible:userFormArea" id="userFormArea">
-            <form id='userForm'  name="userForm">
+            <form id='userForm' name="userForm">
                 <div class="five wide column">
                     <br>
                     <br>
                     <h1 class="ui orange image header center">Welcome to Trivia Game</h1>
-                    <div class="row center"></div>
-                    <input data-bind="value: userName" placeholder="username" type="text">
-                    <p></p>
-                    <input class="submit button" data-bind="click:addUser" type="submit" value="login">
+                    <div class="row center"></div><input data-bind="value: userName" placeholder="username" type="text">
+                    <p></p><input class="submit button" data-bind="click:addUser" type="submit" value="login">
                 </div>
             </form>
         </div>
-        <div id="mainArea" data-bind="visible:mainArea">
+        <div data-bind="visible:mainArea" id="mainArea">
             <div class="ui inverted orange menu">
-                <a class="item" href="#" id='getQestion' data-bind='click:getQestion' >Start a new round</a> 
-                <!--<a class="item" href="#" id="score">Score</a> -->
+                <a class="item" data-bind='click:getQestion' href="#" id='getQestion'>Start a new round</a> <!--<a class="item" href="#" id="score">Score</a> -->
             </div>
             <hr>
             <div class="ui orange sidebar-nav">
                 <h3 class="ui orange image header">Online Users:</h3>
                 <div class='ui row'>
                     <div class='col-md-8' data-bind="foreach:userList" id='userList'>
-                    <p data-bind='text:name'> <p>
+                        <p data-bind='text:name'></p>
+                        <p></p>
                     </div>
                 </div>
-            </div>
-            <!-- Projects Row -->
+            </div><!-- Projects Row -->
             <p></p>
             <p></p>
-            <div class="ui row" id='QAArea' data-bind="visible:QAArea" >
-                <h1 class="ui orange image header" id='newQ'>Question:</h1>
+            <div class="ui row" data-bind="visible:QAArea" id='QAArea'>
+                <h1 class="ui orange image header">Question:</h1>
                 <form>
-                    <div id='dataArea'></div>
+                    <p id='dataArea' data-bind="text:question"></p>
                     <div class="ui left icon input">
-                        <i class="announcement icon">&nbsp;</i> <input id='answerQA' data-bind="value:answerQA"name="anwer" type="text">
+                        <i class="announcement icon">&nbsp;</i> <input data-bind="value:answerQA" id='answerQA' name="anwer" type="text">
                     </div>
                     <div class="ui left icon input">
-                        <i class="cloud upload icon">&nbsp;</i> <input id="submitAnswer" data-bind="click:submitAnswer" name="submit" type="submit">
+                        <i class="cloud upload icon">&nbsp;</i> <input data-bind="click:submitAnswer" id="submitAnswer" name="submit" type="submit">
                     </div>
                 </form>
                 <p></p>
                 <p></p>
                 <p></p>
-                <div class="ui row" id="check-answer" data-bind='value:checkAnswer, visible=checkAnswerArea' >
-                </div>
-                <div class="ui row" id="scroeArea" >
-                    <div id='leadboard'data-bind='foreach:leadboardList'>
-                        <p data-bind='text:item'><p>
+                <div class="ui row" data-bind='value:checkAnswer, visible=checkAnswerArea' id="check-answer"></div>
+                <div class="ui row" id="scroeArea">
+                    <div data-bind='foreach:leadboardList' id='leadboard'>
+                        <p data-bind='text:item'></p>
+                        <p></p>
                     </div>
                     <h1 class="ui orange image header" id='newQ'>history:</h1>
-                    <div id='history' data-bind='visible:historyArea,foreach:historyList'>
-                    <p data-bind='text:record'>
+                    <div data-bind='visible:historyArea,foreach:historyList' id='history'>
+                        <p data-bind='text:record'></p>
                     </div>
                 </div>
             </div>
@@ -81,7 +75,9 @@
     </div>
     <script src="http://code.jquery.com/jquery-2.0.3.min.js">
     </script> <!-- app js -->
-    <script src="/public/js/knockout-3.4.1.js" ></script>
+     
+    <script src="/public/js/knockout-3.4.1.js">
+    </script> 
     <script src="/socket.io/socket.io.js">
     </script> 
     <script src="/public/js/app.js">
