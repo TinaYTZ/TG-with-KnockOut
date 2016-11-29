@@ -5,8 +5,10 @@
 <h3>Using:</h3>
 <br>FrontEnd: Knockout, Html, CSS, Semantic UI, Socket.io 
 <br>BackEnd: Node.js, Express,Socket.io Redis,and MongoDB
-
-
+<br>
+<br>
+<hr>
+<br>
 <ol>
 <h3>Deploy:</h3>
  <li>git clone</li>
