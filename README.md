@@ -2,13 +2,13 @@
 <p>CPSC473 Web Front-End Engineering for Internet Applications</p>
 <p>Assignment 6</p> 
 <hr>
-<h3>Using</h3>
+<h3>Using:</h3>
 <br>FrontEnd: Knockout, Html, CSS, Semantic UI, Socket.io 
 <br>BackEnd: Node.js, Express,Socket.io Redis,and MongoDB
 
 
 <ol>
- <h3>Deploy:</h3>
+<h3>Deploy:</h3>
  <li>git clone</li>
  <li> npm install</li>
  <li>api: node api-server.js</li>
@@ -16,6 +16,8 @@
  <li>score:  redis-server</li> 
  <li>question: mongod --dbpath ./mongodb/data</li>
 </ol>
+
+
 
 <hr>
 <h3>Visit:</h3>
